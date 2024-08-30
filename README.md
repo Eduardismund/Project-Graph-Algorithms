@@ -4,9 +4,10 @@ This repository contains the implementation of various graph methods and algorit
 
 ## Table of Contents
 
-- [Classes](#classes)
+- [Usage](#usage)
   - [Graph Class](#graph-class)
   - [Controller Class](#controller-class)
+  - [UI Class](#ui-class)
 - [Graph Algorithms](#graph-algorithms)
   - [Breadth-First Search (BFS)](#breadth-first-search-bfs)
   - [Lowest Cost Walk](#lowest-cost-walk)
@@ -49,6 +50,13 @@ The `Controller` class provides methods to handle graph input/output, random gra
 - **Random Graph Generation**:
   - `generate_random_graph(nr_of_vertices, nr_of_edges)` generates a random graph with the specified number of vertices and edges.
 
+### UI Class
+
+The `UI` class provides a console-based interface that allows users to interact with the graph and execute various commands. The user can choose from a set of predefined commands to perform operations on the graph, run algorithms, and view results.
+
+![image](https://github.com/user-attachments/assets/d65716d5-6ddd-4ca9-8f97-5f1bad46f35f)
+
+
 ## Graph Algorithms
 
 ### Breadth-First Search (BFS)
@@ -70,3 +78,4 @@ The algorithm implemented here provides an approximate solution to the Traveling
 - **Heuristic**: Starting from a given vertex, repeatedly choose the edge with the minimum cost that does not close a cycle of length less than the total number of vertices (`n`), until all vertices are visited.
   
 - **Objective**: To find a Hamiltonian cycle (a cycle that visits every vertex exactly once and returns to the starting point) with a low total cost, providing an efficient approximation for the TSP.
+
